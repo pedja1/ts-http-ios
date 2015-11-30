@@ -12,11 +12,12 @@
 		072502A41C09D3C800CB192D /* request_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7B51C09CE330051790B /* request_builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		072502A51C09D3CC00CB192D /* ts_http.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D88B4F1C08E5FE00327D1A /* ts_http.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		072502A61C09D3EB00CB192D /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7AD1C09C7C00051790B /* Reachability.h */; };
+		07281F091C0CD63900A19FD2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07281F081C0CD63900A19FD2 /* QuartzCore.framework */; };
 		074FD7AC1C09BF330051790B /* network.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7AB1C09BF330051790B /* network.m */; };
 		074FD7AF1C09C7C00051790B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7AE1C09C7C00051790B /* Reachability.m */; };
 		074FD7B41C09C9240051790B /* utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7B31C09C9240051790B /* utility.m */; };
-		07781C0E1C0C2DD800E7FEFB /* iToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 07781C0C1C0C2DD800E7FEFB /* iToast.h */; };
-		07781C0F1C0C2DD800E7FEFB /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 07781C0D1C0C2DD800E7FEFB /* iToast.m */; };
+		07781C0E1C0C2DD800E7FEFB /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 07781C0C1C0C2DD800E7FEFB /* Toast.h */; };
+		07781C0F1C0C2DD800E7FEFB /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 07781C0D1C0C2DD800E7FEFB /* Toast.m */; };
 		07D88B501C08E5FE00327D1A /* ts_http.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07D88B4F1C08E5FE00327D1A /* ts_http.h */; };
 		07D88B521C08E5FE00327D1A /* ts_http.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D88B511C08E5FE00327D1A /* ts_http.m */; };
 		07D88B581C08E5FE00327D1A /* libts-http.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D88B4C1C08E5FE00327D1A /* libts-http.a */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07281F081C0CD63900A19FD2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		074FD7AA1C09BE9D0051790B /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
 		074FD7AB1C09BF330051790B /* network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = network.m; sourceTree = "<group>"; };
 		074FD7AD1C09C7C00051790B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -53,8 +55,8 @@
 		074FD7B21C09C8A10051790B /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
 		074FD7B31C09C9240051790B /* utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utility.m; sourceTree = "<group>"; };
 		074FD7B51C09CE330051790B /* request_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = request_builder.h; sourceTree = "<group>"; };
-		07781C0C1C0C2DD800E7FEFB /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iToast.h; sourceTree = "<group>"; };
-		07781C0D1C0C2DD800E7FEFB /* iToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iToast.m; sourceTree = "<group>"; };
+		07781C0C1C0C2DD800E7FEFB /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		07781C0D1C0C2DD800E7FEFB /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		07D88B4C1C08E5FE00327D1A /* libts-http.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libts-http.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D88B4F1C08E5FE00327D1A /* ts_http.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ts_http.h; sourceTree = "<group>"; };
 		07D88B511C08E5FE00327D1A /* ts_http.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ts_http.m; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07281F091C0CD63900A19FD2 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +96,7 @@
 		07D88B431C08E5FE00327D1A = {
 			isa = PBXGroup;
 			children = (
+				07281F081C0CD63900A19FD2 /* QuartzCore.framework */,
 				07D88B4E1C08E5FE00327D1A /* ts-http */,
 				07D88B5B1C08E5FE00327D1A /* ts-httpTests */,
 				07D88B4D1C08E5FE00327D1A /* Products */,
@@ -112,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				074FD7B01C09C85F0051790B /* utility */,
-				07781C0D1C0C2DD800E7FEFB /* iToast.m */,
-				07781C0C1C0C2DD800E7FEFB /* iToast.h */,
+				07781C0D1C0C2DD800E7FEFB /* Toast.m */,
+				07781C0C1C0C2DD800E7FEFB /* Toast.h */,
 				074FD7AD1C09C7C00051790B /* Reachability.h */,
 				074FD7AE1C09C7C00051790B /* Reachability.m */,
 				07D88B4F1C08E5FE00327D1A /* ts_http.h */,
@@ -150,10 +154,10 @@
 			files = (
 				072502A21C09D3BF00CB192D /* utility.h in Headers */,
 				072502A31C09D3C600CB192D /* network.h in Headers */,
-				07781C0E1C0C2DD800E7FEFB /* iToast.h in Headers */,
 				072502A51C09D3CC00CB192D /* ts_http.h in Headers */,
 				072502A41C09D3C800CB192D /* request_builder.h in Headers */,
 				072502A61C09D3EB00CB192D /* Reachability.h in Headers */,
+				07781C0E1C0C2DD800E7FEFB /* Toast.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +253,7 @@
 				074FD7B41C09C9240051790B /* utility.m in Sources */,
 				074FD7AC1C09BF330051790B /* network.m in Sources */,
 				074FD7AF1C09C7C00051790B /* Reachability.m in Sources */,
-				07781C0F1C0C2DD800E7FEFB /* iToast.m in Sources */,
+				07781C0F1C0C2DD800E7FEFB /* Toast.m in Sources */,
 				07D88B521C08E5FE00327D1A /* ts_http.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

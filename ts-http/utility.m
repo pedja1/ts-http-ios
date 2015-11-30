@@ -7,14 +7,13 @@
 //
 
 #import "utility.h"
-#import "iToast.h"
 
 @implementation Utility
 
 +(void)showToastWithMessage:(NSString *)message
 {
-    NSLog(@"bla bla");
-    [[iToast makeText:message] show];
+    UIWindow * window = [[[UIApplication sharedApplication] delegate] window];
+    [window makeToast:message];
 }
 
 @end
