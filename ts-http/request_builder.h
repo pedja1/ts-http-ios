@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "file.h"
+#import "response_message_policy.h"
 
 @interface RequestBuilder : NSObject
 
@@ -16,20 +18,41 @@ typedef enum method
     PUT,
     GET,
     DELETE
-}: Method;
+} Method;
 
 typedef enum postMethod
 {
     BODY,
     X_WWW_FORM_URL_ENCODED,
-    FORM_DATE
-}: PostMethod;
+    FORM_DATA
+} PostMethod;
 
-NSMutableString urlParts;
-Method method;
-NSMutableDictionary urlParams;
+#pragma mark - properties
 
--(id)initWithMethod: (Method *)method;
+@property (readonly) NSMutableString *urlParts;
+@property (readonly) NSMutableDictionary *urlParams;
+@property (readonly) NSMutableDictionary *postParams;
+@property (readonly) NSMutableDictionary *headers;
+@property (readonly) NSInteger retriesLeft;
+@property NSString *contentType;
+@property NSString *requestUrl;
+@property (setter=setRequestBody:, getter=getRequestBody)NSString *requestBody;
+@property NSString *fileParamName;
+@property NSInteger maxRetires;
+@property Method method;
+@property PostMethod postMethod;
+@property ResponseMessagePolicy *responseMessagePolicy;
 
+#pragma mark - constructor
+
+-(id)initWithMethod: (Method)method;
+
+#pragma mark - methods
+
++ (NSString*)getDefaultRequestUrl;
++ (void)setDefaultRequestUrl: (NSString*)requestUrl;
+
+- (void)setRequestBody:(NSString *)requestBody;
+- (NSString*)getRequestBody;
 
 @end

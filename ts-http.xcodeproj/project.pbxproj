@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071204841C0E101500A478AE /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 071204831C0E101500A478AE /* file.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071204861C0E114E00A478AE /* response_message_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = 071204851C0E114E00A478AE /* response_message_policy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071204881C0E12CC00A478AE /* request_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 071204871C0E12CC00A478AE /* request_builder.m */; };
+		0712048A1C0E25CF00A478AE /* response_message_policy.m in Sources */ = {isa = PBXBuildFile; fileRef = 071204891C0E25CF00A478AE /* response_message_policy.m */; };
 		072502A21C09D3BF00CB192D /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7B21C09C8A10051790B /* utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		072502A31C09D3C600CB192D /* network.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7AA1C09BE9D0051790B /* network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		072502A41C09D3C800CB192D /* request_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7B51C09CE330051790B /* request_builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +51,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		071204831C0E101500A478AE /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		071204851C0E114E00A478AE /* response_message_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = response_message_policy.h; sourceTree = "<group>"; };
+		071204871C0E12CC00A478AE /* request_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = request_builder.m; sourceTree = "<group>"; };
+		071204891C0E25CF00A478AE /* response_message_policy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = response_message_policy.m; sourceTree = "<group>"; };
 		07281F081C0CD63900A19FD2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		074FD7AA1C09BE9D0051790B /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
 		074FD7AB1C09BF330051790B /* network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = network.m; sourceTree = "<group>"; };
@@ -125,6 +133,10 @@
 				074FD7AA1C09BE9D0051790B /* network.h */,
 				074FD7AB1C09BF330051790B /* network.m */,
 				074FD7B51C09CE330051790B /* request_builder.h */,
+				071204871C0E12CC00A478AE /* request_builder.m */,
+				071204831C0E101500A478AE /* file.h */,
+				071204851C0E114E00A478AE /* response_message_policy.h */,
+				071204891C0E25CF00A478AE /* response_message_policy.m */,
 			);
 			path = "ts-http";
 			sourceTree = "<group>";
@@ -155,6 +167,8 @@
 				072502A21C09D3BF00CB192D /* utility.h in Headers */,
 				072502A31C09D3C600CB192D /* network.h in Headers */,
 				072502A51C09D3CC00CB192D /* ts_http.h in Headers */,
+				071204861C0E114E00A478AE /* response_message_policy.h in Headers */,
+				071204841C0E101500A478AE /* file.h in Headers */,
 				072502A41C09D3C800CB192D /* request_builder.h in Headers */,
 				072502A61C09D3EB00CB192D /* Reachability.h in Headers */,
 				07781C0E1C0C2DD800E7FEFB /* Toast.h in Headers */,
@@ -253,6 +267,8 @@
 				074FD7B41C09C9240051790B /* utility.m in Sources */,
 				074FD7AC1C09BF330051790B /* network.m in Sources */,
 				074FD7AF1C09C7C00051790B /* Reachability.m in Sources */,
+				071204881C0E12CC00A478AE /* request_builder.m in Sources */,
+				0712048A1C0E25CF00A478AE /* response_message_policy.m in Sources */,
 				07781C0F1C0C2DD800E7FEFB /* Toast.m in Sources */,
 				07D88B521C08E5FE00327D1A /* ts_http.m in Sources */,
 			);

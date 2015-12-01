@@ -10,6 +10,11 @@
 
 @implementation TSHttp
 
-NSString *const LOG_TAG = @"ts-http";
+static BOOL logging;
+
++(void)setLoggingEnabled:(BOOL)enabled
+{
+    logging = enabled;
+}
 
 @end

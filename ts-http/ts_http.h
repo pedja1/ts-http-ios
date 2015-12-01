@@ -10,6 +10,6 @@
 
 @interface TSHttp : NSObject
 
-extern NSString *const LOG_TAG;
++ (void) setLoggingEnabled:(BOOL)enabled;
 
 @end
