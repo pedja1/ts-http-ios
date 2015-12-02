@@ -162,4 +162,37 @@ static ResponseMessagePolicy *DEFAULT_RESPONSE_MESSAGE_POLICY;
     [_urlParts appendString:part];
 }
 
+-(NSString*)getUrlParams
+{
+    NSMutableString *tmpString = [[NSMutableString alloc] init];
+    [tmpString appendString:_urlParts];
+    for(NSString *key in _urlParams)
+    {
+        if([tmpString rangeOfString:@"?"].location == NSNotFound)
+            [tmpString appendString: @"?"];
+        else
+            [tmpString appendString: @"&"];
+        [tmpString appendString: key];
+        [tmpString appendString: @"="];
+        [tmpString appendString: [_urlParams objectForKey:key]];
+    }
+    return tmpString;
+}
+
+-(NSString*)getRequestUrl
+{
+    return [NSString stringWithFormat:@"%@%@", _requestUrl, [self getUrlParams]];
+}
+
+-(NSString*) getParamWithKey: (NSString*)key
+{
+    NSString *urlParam = [_urlParams objectForKey:key];
+    if(urlParam != nil)
+        return urlParam;
+    NSString *postParam = [_postParams objectForKey:key];
+    if(postParam != nil)
+        return postParam;
+    return nil;
+}
+
 @end

@@ -35,7 +35,7 @@ typedef enum postMethod
 @property (readonly) NSMutableDictionary *headers;
 @property (readonly) NSInteger retriesLeft;
 @property NSString *contentType;
-@property NSString *requestUrl;
+@property (setter=getRequestUrl:) NSString *requestUrl;
 @property (setter=setRequestBody:, getter=getRequestBody)NSString *requestBody;
 @property NSString *fileParamName;
 @property (setter=setMaxRetries:, getter=getMaxRetries)NSInteger maxRetries;
@@ -68,5 +68,9 @@ typedef enum postMethod
 -(void)addParamWithKey: (NSString*)key andValue: (NSString*)value;
 -(void)addParamWithKey: (NSString*)key andValue: (NSString*)value forceAddToUrl: (BOOL)force;
 -(void)addUrlPart: (NSString*)part;
+
+-(NSString*)getUrlParams;
+-(NSString*)getRequestUrl;
+-(NSString*)getParam;
 
 @end

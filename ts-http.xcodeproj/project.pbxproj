@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0707B7D81C0F6B90002469EE /* file.m in Sources */ = {isa = PBXBuildFile; fileRef = 0707B7D71C0F6B90002469EE /* file.m */; };
 		071204841C0E101500A478AE /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 071204831C0E101500A478AE /* file.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		071204861C0E114E00A478AE /* response_message_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = 071204851C0E114E00A478AE /* response_message_policy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		071204881C0E12CC00A478AE /* request_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 071204871C0E12CC00A478AE /* request_builder.m */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0707B7D71C0F6B90002469EE /* file.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = file.m; sourceTree = "<group>"; };
 		071204831C0E101500A478AE /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
 		071204851C0E114E00A478AE /* response_message_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = response_message_policy.h; sourceTree = "<group>"; };
 		071204871C0E12CC00A478AE /* request_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = request_builder.m; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		07D88B4E1C08E5FE00327D1A /* ts-http */ = {
 			isa = PBXGroup;
 			children = (
+				0707B7D71C0F6B90002469EE /* file.m */,
 				074FD7B01C09C85F0051790B /* utility */,
 				07781C0D1C0C2DD800E7FEFB /* Toast.m */,
 				07781C0C1C0C2DD800E7FEFB /* Toast.h */,
@@ -220,7 +223,7 @@
 		07D88B441C08E5FE00327D1A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Predrag Cokulov";
 				TargetAttributes = {
 					07D88B4B1C08E5FE00327D1A = {
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				074FD7B41C09C9240051790B /* utility.m in Sources */,
+				0707B7D81C0F6B90002469EE /* file.m in Sources */,
 				074FD7AC1C09BF330051790B /* network.m in Sources */,
 				074FD7AF1C09C7C00051790B /* Reachability.m in Sources */,
 				071204881C0E12CC00A478AE /* request_builder.m in Sources */,
@@ -312,6 +316,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -408,6 +413,7 @@
 				);
 				INFOPLIST_FILE = "ts-httpTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.afstudio.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -422,6 +428,7 @@
 				);
 				INFOPLIST_FILE = "ts-httpTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.afstudio.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
