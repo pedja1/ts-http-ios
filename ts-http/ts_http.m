@@ -17,4 +17,9 @@ static BOOL logging;
     logging = enabled;
 }
 
++(BOOL)isLoggingEnabled
+{
+    return logging;
+}
+
 @end

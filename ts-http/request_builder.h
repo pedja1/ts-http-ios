@@ -38,10 +38,11 @@ typedef enum postMethod
 @property NSString *requestUrl;
 @property (setter=setRequestBody:, getter=getRequestBody)NSString *requestBody;
 @property NSString *fileParamName;
-@property NSInteger maxRetires;
+@property (setter=setMaxRetries:, getter=getMaxRetries)NSInteger maxRetries;
 @property Method method;
-@property PostMethod postMethod;
+@property (setter=setPostMethod:, getter=getPostMethod) PostMethod postMethod;
 @property ResponseMessagePolicy *responseMessagePolicy;
+@property (setter=setFiles:, getter=getFiles)NSArray *files;
 
 #pragma mark - constructor
 
@@ -54,5 +55,18 @@ typedef enum postMethod
 
 - (void)setRequestBody:(NSString *)requestBody;
 - (NSString*)getRequestBody;
+
+- (void)setPostMethod:(PostMethod)postMethod;
+- (PostMethod)getPostMethod;
+
+- (void)setFiles:(NSArray*)files;
+- (NSArray*)getFiles;
+
+- (void)setMaxRetries:(NSInteger)maxRetries;
+- (NSInteger)getMaxRetries;
+
+-(void)addParamWithKey: (NSString*)key andValue: (NSString*)value;
+-(void)addParamWithKey: (NSString*)key andValue: (NSString*)value forceAddToUrl: (BOOL)force;
+-(void)addUrlPart: (NSString*)part;
 
 @end

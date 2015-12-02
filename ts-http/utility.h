@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Toast.h"
 
-@interface Utility : NSObject
+@interface TSHttpUtility : NSObject
 
 +(void)showToastWithMessage:(NSString *)message;
++(NSString*)encodeString: (NSString*)string;
 
 @end

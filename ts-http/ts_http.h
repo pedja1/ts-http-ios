@@ -11,5 +11,6 @@
 @interface TSHttp : NSObject
 
 + (void) setLoggingEnabled:(BOOL)enabled;
++ (BOOL) isLoggingEnabled;
 
 @end

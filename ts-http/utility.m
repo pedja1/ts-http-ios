@@ -8,12 +8,17 @@
 
 #import "utility.h"
 
-@implementation Utility
+@implementation TSHttpUtility
 
 +(void)showToastWithMessage:(NSString *)message
 {
     UIWindow * window = [[[UIApplication sharedApplication] delegate] window];
     [window makeToast:message];
+}
+
++(NSString*)encodeString:(NSString *)string
+{
+    return [string stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
 }
 
 @end
