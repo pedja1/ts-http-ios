@@ -25,18 +25,23 @@ static ResponseMessagePolicy *DEFAULT_RESPONSE_MESSAGE_POLICY;
 @synthesize maxRetries = _maxRetries;
 @synthesize requestUrl = _requestUrl;
 
+-(id)init
+{
+    return [self initWithMethod: GET];
+}
+
 -(id)initWithMethod: (Method)method
 {
     self = [super init];
     if (self)
     {
-        self.contentType = @"text/plain";
-        self.fileParamName = @"file";
-        self.maxRetries = 3;
-        self.requestUrl = [RequestBuilder getDefaultRequestUrl];
-        _retriesLeft = self.maxRetries;
-        self.method = method;
-        self.responseMessagePolicy = DEFAULT_RESPONSE_MESSAGE_POLICY;
+        _contentType = @"text/plain";
+        _fileParamName = @"file";
+        _maxRetries = 3;
+        _requestUrl = [RequestBuilder getDefaultRequestUrl];
+        _retriesLeft = _maxRetries;
+        _method = method;
+        _responseMessagePolicy = DEFAULT_RESPONSE_MESSAGE_POLICY;
         _urlParts = [[NSMutableString alloc] init];
         _urlParams = [[NSMutableDictionary alloc] init];
         _postParams = [[NSMutableDictionary alloc] init];
@@ -93,7 +98,7 @@ static ResponseMessagePolicy *DEFAULT_RESPONSE_MESSAGE_POLICY;
 
 - (PostMethod)getPostMethod
 {
-    return self.postMethod;
+    return _postMethod;
 }
 
 -(void)setFiles:(NSArray *)files

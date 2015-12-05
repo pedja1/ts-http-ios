@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0707B7D81C0F6B90002469EE /* file.m in Sources */ = {isa = PBXBuildFile; fileRef = 0707B7D71C0F6B90002469EE /* file.m */; };
+		0707B7DB1C0F71E8002469EE /* ts_request_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0707B7D91C0F71E8002469EE /* ts_request_manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0707B7DC1C0F71E8002469EE /* ts_request_manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0707B7DA1C0F71E8002469EE /* ts_request_manager.m */; };
 		071204841C0E101500A478AE /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 071204831C0E101500A478AE /* file.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		071204861C0E114E00A478AE /* response_message_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = 071204851C0E114E00A478AE /* response_message_policy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		071204881C0E12CC00A478AE /* request_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 071204871C0E12CC00A478AE /* request_builder.m */; };
@@ -18,9 +20,23 @@
 		072502A51C09D3CC00CB192D /* ts_http.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D88B4F1C08E5FE00327D1A /* ts_http.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		072502A61C09D3EB00CB192D /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7AD1C09C7C00051790B /* Reachability.h */; };
 		07281F091C0CD63900A19FD2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07281F081C0CD63900A19FD2 /* QuartzCore.framework */; };
+		0745E9571C12ED270056D064 /* request.h in Headers */ = {isa = PBXBuildFile; fileRef = 0745E9551C12ED270056D064 /* request.h */; };
+		0745E9581C12ED270056D064 /* request.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745E9561C12ED270056D064 /* request.m */; };
+		0745E95B1C12F5CD0056D064 /* NoInternetConnectionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0745E9591C12F5CD0056D064 /* NoInternetConnectionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0745E95C1C12F5CD0056D064 /* NoInternetConnectionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745E95A1C12F5CD0056D064 /* NoInternetConnectionHandler.m */; };
+		0745E95F1C12F8B30056D064 /* SimpleRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0745E95D1C12F8B30056D064 /* SimpleRequestHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0745E9601C12F8B30056D064 /* SimpleRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745E95E1C12F8B30056D064 /* SimpleRequestHandler.m */; };
+		0745E9631C12FBD60056D064 /* Internet.h in Headers */ = {isa = PBXBuildFile; fileRef = 0745E9611C12FBD60056D064 /* Internet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0745E9641C12FBD60056D064 /* Internet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745E9621C12FBD60056D064 /* Internet.m */; };
+		0745E9671C12FC0B0056D064 /* Response.h in Headers */ = {isa = PBXBuildFile; fileRef = 0745E9651C12FC0B0056D064 /* Response.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0745E9681C12FC0B0056D064 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745E9661C12FC0B0056D064 /* Response.m */; };
 		074FD7AC1C09BF330051790B /* network.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7AB1C09BF330051790B /* network.m */; };
 		074FD7AF1C09C7C00051790B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7AE1C09C7C00051790B /* Reachability.m */; };
 		074FD7B41C09C9240051790B /* utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7B31C09C9240051790B /* utility.m */; };
+		075DB4FC1C10BDB10012753D /* response_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 075DB4FA1C10BDB10012753D /* response_parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		075DB4FD1C10BDB10012753D /* response_parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DB4FB1C10BDB10012753D /* response_parser.m */; };
+		077004391C1360440077132E /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 077004371C1360440077132E /* MBProgressHUD.h */; };
+		0770043A1C1360440077132E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 077004381C1360440077132E /* MBProgressHUD.m */; };
 		07781C0E1C0C2DD800E7FEFB /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 07781C0C1C0C2DD800E7FEFB /* Toast.h */; };
 		07781C0F1C0C2DD800E7FEFB /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 07781C0D1C0C2DD800E7FEFB /* Toast.m */; };
 		07D88B501C08E5FE00327D1A /* ts_http.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07D88B4F1C08E5FE00327D1A /* ts_http.h */; };
@@ -53,11 +69,23 @@
 
 /* Begin PBXFileReference section */
 		0707B7D71C0F6B90002469EE /* file.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = file.m; sourceTree = "<group>"; };
+		0707B7D91C0F71E8002469EE /* ts_request_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts_request_manager.h; sourceTree = "<group>"; };
+		0707B7DA1C0F71E8002469EE /* ts_request_manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ts_request_manager.m; sourceTree = "<group>"; };
 		071204831C0E101500A478AE /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
 		071204851C0E114E00A478AE /* response_message_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = response_message_policy.h; sourceTree = "<group>"; };
 		071204871C0E12CC00A478AE /* request_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = request_builder.m; sourceTree = "<group>"; };
 		071204891C0E25CF00A478AE /* response_message_policy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = response_message_policy.m; sourceTree = "<group>"; };
 		07281F081C0CD63900A19FD2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0745E9551C12ED270056D064 /* request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = request.h; sourceTree = "<group>"; };
+		0745E9561C12ED270056D064 /* request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = request.m; sourceTree = "<group>"; };
+		0745E9591C12F5CD0056D064 /* NoInternetConnectionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoInternetConnectionHandler.h; sourceTree = "<group>"; };
+		0745E95A1C12F5CD0056D064 /* NoInternetConnectionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoInternetConnectionHandler.m; sourceTree = "<group>"; };
+		0745E95D1C12F8B30056D064 /* SimpleRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleRequestHandler.h; sourceTree = "<group>"; };
+		0745E95E1C12F8B30056D064 /* SimpleRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleRequestHandler.m; sourceTree = "<group>"; };
+		0745E9611C12FBD60056D064 /* Internet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Internet.h; sourceTree = "<group>"; };
+		0745E9621C12FBD60056D064 /* Internet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Internet.m; sourceTree = "<group>"; };
+		0745E9651C12FC0B0056D064 /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
+		0745E9661C12FC0B0056D064 /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
 		074FD7AA1C09BE9D0051790B /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
 		074FD7AB1C09BF330051790B /* network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = network.m; sourceTree = "<group>"; };
 		074FD7AD1C09C7C00051790B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -65,6 +93,10 @@
 		074FD7B21C09C8A10051790B /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
 		074FD7B31C09C9240051790B /* utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utility.m; sourceTree = "<group>"; };
 		074FD7B51C09CE330051790B /* request_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = request_builder.h; sourceTree = "<group>"; };
+		075DB4FA1C10BDB10012753D /* response_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = response_parser.h; sourceTree = "<group>"; };
+		075DB4FB1C10BDB10012753D /* response_parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = response_parser.m; sourceTree = "<group>"; };
+		077004371C1360440077132E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		077004381C1360440077132E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		07781C0C1C0C2DD800E7FEFB /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
 		07781C0D1C0C2DD800E7FEFB /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		07D88B4C1C08E5FE00327D1A /* libts-http.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libts-http.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +157,6 @@
 		07D88B4E1C08E5FE00327D1A /* ts-http */ = {
 			isa = PBXGroup;
 			children = (
-				0707B7D71C0F6B90002469EE /* file.m */,
 				074FD7B01C09C85F0051790B /* utility */,
 				07781C0D1C0C2DD800E7FEFB /* Toast.m */,
 				07781C0C1C0C2DD800E7FEFB /* Toast.h */,
@@ -138,8 +169,25 @@
 				074FD7B51C09CE330051790B /* request_builder.h */,
 				071204871C0E12CC00A478AE /* request_builder.m */,
 				071204831C0E101500A478AE /* file.h */,
+				0707B7D71C0F6B90002469EE /* file.m */,
 				071204851C0E114E00A478AE /* response_message_policy.h */,
 				071204891C0E25CF00A478AE /* response_message_policy.m */,
+				0707B7D91C0F71E8002469EE /* ts_request_manager.h */,
+				0707B7DA1C0F71E8002469EE /* ts_request_manager.m */,
+				075DB4FA1C10BDB10012753D /* response_parser.h */,
+				075DB4FB1C10BDB10012753D /* response_parser.m */,
+				0745E9551C12ED270056D064 /* request.h */,
+				0745E9561C12ED270056D064 /* request.m */,
+				0745E9591C12F5CD0056D064 /* NoInternetConnectionHandler.h */,
+				0745E95A1C12F5CD0056D064 /* NoInternetConnectionHandler.m */,
+				0745E95D1C12F8B30056D064 /* SimpleRequestHandler.h */,
+				0745E95E1C12F8B30056D064 /* SimpleRequestHandler.m */,
+				0745E9611C12FBD60056D064 /* Internet.h */,
+				0745E9621C12FBD60056D064 /* Internet.m */,
+				0745E9651C12FC0B0056D064 /* Response.h */,
+				0745E9661C12FC0B0056D064 /* Response.m */,
+				077004371C1360440077132E /* MBProgressHUD.h */,
+				077004381C1360440077132E /* MBProgressHUD.m */,
 			);
 			path = "ts-http";
 			sourceTree = "<group>";
@@ -169,12 +217,20 @@
 			files = (
 				072502A21C09D3BF00CB192D /* utility.h in Headers */,
 				072502A31C09D3C600CB192D /* network.h in Headers */,
+				075DB4FC1C10BDB10012753D /* response_parser.h in Headers */,
 				072502A51C09D3CC00CB192D /* ts_http.h in Headers */,
+				0745E95F1C12F8B30056D064 /* SimpleRequestHandler.h in Headers */,
 				071204861C0E114E00A478AE /* response_message_policy.h in Headers */,
+				0707B7DB1C0F71E8002469EE /* ts_request_manager.h in Headers */,
+				0745E95B1C12F5CD0056D064 /* NoInternetConnectionHandler.h in Headers */,
+				0745E9631C12FBD60056D064 /* Internet.h in Headers */,
 				071204841C0E101500A478AE /* file.h in Headers */,
+				0745E9671C12FC0B0056D064 /* Response.h in Headers */,
 				072502A41C09D3C800CB192D /* request_builder.h in Headers */,
+				077004391C1360440077132E /* MBProgressHUD.h in Headers */,
 				072502A61C09D3EB00CB192D /* Reachability.h in Headers */,
 				07781C0E1C0C2DD800E7FEFB /* Toast.h in Headers */,
+				0745E9571C12ED270056D064 /* request.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,14 +323,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0745E9581C12ED270056D064 /* request.m in Sources */,
+				0770043A1C1360440077132E /* MBProgressHUD.m in Sources */,
 				074FD7B41C09C9240051790B /* utility.m in Sources */,
 				0707B7D81C0F6B90002469EE /* file.m in Sources */,
 				074FD7AC1C09BF330051790B /* network.m in Sources */,
+				0745E9641C12FBD60056D064 /* Internet.m in Sources */,
+				0745E95C1C12F5CD0056D064 /* NoInternetConnectionHandler.m in Sources */,
+				0745E9601C12F8B30056D064 /* SimpleRequestHandler.m in Sources */,
 				074FD7AF1C09C7C00051790B /* Reachability.m in Sources */,
 				071204881C0E12CC00A478AE /* request_builder.m in Sources */,
+				075DB4FD1C10BDB10012753D /* response_parser.m in Sources */,
 				0712048A1C0E25CF00A478AE /* response_message_policy.m in Sources */,
 				07781C0F1C0C2DD800E7FEFB /* Toast.m in Sources */,
+				0745E9681C12FC0B0056D064 /* Response.m in Sources */,
 				07D88B521C08E5FE00327D1A /* ts_http.m in Sources */,
+				0707B7DC1C0F71E8002469EE /* ts_request_manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

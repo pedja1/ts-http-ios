@@ -71,6 +71,6 @@ typedef enum postMethod
 
 -(NSString*)getUrlParams;
 -(NSString*)getRequestUrl;
--(NSString*)getParam;
+-(NSString*)getParamWithKey: (NSString*)key;
 
 @end
