@@ -7,6 +7,8 @@
 //
 
 #import "Internet.h"
+#import "ts_http.h"
+#import "utility.h"
 
 @implementation Internet
 
@@ -43,7 +45,22 @@
                 case BODY:
                     break;
                 case X_WWW_FORM_URL_ENCODED:
+                {
+                    NSMutableString *params = [[NSMutableString alloc]init];
+                    for (NSString *key in [requastBuilder.postParams allKeys])
+                    {
+                        [params appendString:@"&"];
+                        [params appendString:key];
+                        [params appendString:@"="];
+                        [params appendString:[TSHttpUtility encodeString:[requastBuilder.postParams objectForKey:key]]];
+                    }
+                    NSData *postData = [params dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+                    NSString *postLength = [NSString stringWithFormat:@"%lu",(unsigned long)[postData length]];
+                    [request addValue:@"application/x-www-form-urlencoded charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+                    [request addValue:postLength forHTTPHeaderField:@"Content-Length"];
+                    [request setHTTPBody:postData];
                     break;
+                }
                 case FORM_DATA:
                     break;
             }
@@ -74,6 +91,8 @@
     {
         response.responseDataString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     }
+    if([TSHttp isLoggingEnabled])
+        NSLog(@"%@", [response toString]);
     return response;
 }
 

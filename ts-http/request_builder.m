@@ -41,6 +41,7 @@ static ResponseMessagePolicy *DEFAULT_RESPONSE_MESSAGE_POLICY;
         _requestUrl = [RequestBuilder getDefaultRequestUrl];
         _retriesLeft = _maxRetries;
         _method = method;
+        _postMethod = X_WWW_FORM_URL_ENCODED;
         _responseMessagePolicy = DEFAULT_RESPONSE_MESSAGE_POLICY;
         _urlParts = [[NSMutableString alloc] init];
         _urlParams = [[NSMutableDictionary alloc] init];
@@ -140,11 +141,11 @@ static ResponseMessagePolicy *DEFAULT_RESPONSE_MESSAGE_POLICY;
     }
     if(force || _method == GET || _method == DELETE)
     {
-        [_urlParams setObject:value forKey:[TSHttpUtility encodeString:value]];
+        [_urlParams setObject:value forKey:[TSHttpUtility encodeString:key]];
     }
     else if(_method == POST || _method == PUT)
     {
-        [_postParams setObject:value forKey:value];
+        [_postParams setObject:value forKey:key];
     }
 }
 

@@ -10,7 +10,7 @@
 
 @implementation TSHttp
 
-static BOOL logging;
+static BOOL logging = YES;
 
 +(void)setLoggingEnabled:(BOOL)enabled
 {

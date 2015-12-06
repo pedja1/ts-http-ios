@@ -32,7 +32,7 @@ static BOOL printResponse;
 
 -(NSString*)toString
 {
-    return [NSString stringWithFormat:@"code='%d', responseMessage='%@', responseData='%@'", self.code, self.responseMessage, printResponse ? self.responseData : nil];
+    return [NSString stringWithFormat:@"code='%d', responseMessage='%@', responseData='%@'", (int)self.code, self.responseMessage, printResponse ? self.responseDataString : nil];
 }
 
 @end
