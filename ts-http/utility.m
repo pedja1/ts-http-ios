@@ -18,7 +18,15 @@
 
 +(NSString*)encodeString:(NSString *)string
 {
-    return [string stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    //return [string stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    CFStringRef safeString = CFURLCreateStringByAddingPercentEscapes (
+                                                                      NULL,
+                                                                      (CFStringRef)string,
+                                                                      NULL,
+                                                                      CFSTR("/%&=?$#+-~@<>|\\*,.()[]{}^!"),
+                                                                      kCFStringEncodingUTF8
+                                                                      );
+    return (__bridge NSString *)(safeString);
 }
 
 @end
