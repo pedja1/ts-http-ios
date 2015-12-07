@@ -43,7 +43,19 @@
             switch (requastBuilder.postMethod)
             {
                 case BODY:
+                {
+                    if (requastBuilder.requestBody == nil)
+                        @throw [NSException
+                         exceptionWithName:@"NSInvalidArgumentException"
+                         reason:@"requestBody cannot be nil if post method is BODY"
+                         userInfo:nil];
+                    NSData *postData = [requastBuilder.requestBody dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+                    NSString *postLength = [NSString stringWithFormat:@"%lu",(unsigned long)[postData length]];
+                    [request setHTTPBody:postData];
+                    [request addValue:@"application/x-www-form-urlencoded charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+                    [request addValue:postLength forHTTPHeaderField:@"Content-Length"];
                     break;
+                }
                 case X_WWW_FORM_URL_ENCODED:
                 {
                     NSMutableString *params = [[NSMutableString alloc]init];
@@ -70,6 +82,7 @@
             break;
         case DELETE:
             [request setHTTPMethod: @"DELETE"];
+            [request addValue:@"application/x-www-form-urlencoded charset=utf-8" forHTTPHeaderField:@"Content-Type"];
             break;
     }
     
