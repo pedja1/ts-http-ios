@@ -49,32 +49,29 @@ manager.responseHandlerDelegate = self;
 To create a request you will use `RequestBuilder`
 
 ```objective-c
-RequestBuilder builder = new RequestBuilder(RequestBuilder.Method.POST);//create new RequestBuilder with HTTP POST method
-builder.setPostMethod(RequestBuilder.PostMethod.X_WWW_FORM_URL_ENCODED);//set post method, X_WWW_FORM_URL_ENCODED is default so you don't need to set it
-builder.setRequestUrl("http://tulfie.conveo.net/api/v1/");//set a request url. You can also call static method `setDefaultRequestUrl` once, instead of setting is every time
-builder.addParam("members");//this will add param as part of the url. eg. http://tulfie.conveo.net/api/v1/member/login
-builder.addParam("login");
-builder.addParam("username", "predragcokulov@gmail.com");//add POST param, if HTTP method was get, then this would put param in url. eg. http://tulfie.conveo.net/api/v1/member/login?username=predragcokulov@gmail.com
-builder.addParam("password", "123456");
-builder.addParam("grant_type", "password");
-builder.addParam("client_id", "fnbAvzRXEpcCVhzDBWMa5WxYqksXwvfL");
-builder.addParam("client_secret", "MVmUrQNx8ZLechxb");
+RequestBuilder builder = [[RequestBuilder alloc] initWithMethod: POST];//create new RequestBuilder with HTTP POST method
+builder.postMethod = X_WWW_FORM_URL_ENCODED;//set post method, X_WWW_FORM_URL_ENCODED is default so you don't need to set it
+builder.requestUrl = @"http://tulfie.conveo.net/api/v1/";//set a request url. You can also call static method `setDefaultRequestUrl` once, instead of setting is every time
+[builder addUrlPart: @"members"];//this will add param as part of the url. eg. http://tulfie.conveo.net/api/v1/member/login
+[builder addUrlPart: @"login"];
+[builder addParamWithKey: @"username" andValue: @"predragcokulov@gmail.com"];//add POST param, if HTTP method was GET, then this would put param in url. eg. http://tulfie.conveo.net/api/v1/member/login?username=predragcokulov@gmail.com
+[builder addParamWithKey: @"password" andValue: @"123456";
 ```
 
 #### Execute the request
 
-```java
-manager.execute(REQUEST_CODE_LOGIN, builder);
+```objective-c
+[manager executeRequestWithRequestCode: REQUEST_CODE_LOGIN andRequestBuilder: builder);
 ```
 
 If manager was created with `sync` param set to true, then this method will execute the request and return the response  
 Otherwise it will return immediately (return value will be null), and you will get response in `ResponseHandler`  
 
-By default request will be executed using default implementation `SimpleRequestHandler`  
+By default request will be executed using default implementation `SimpleRequestHandlerDelegate`  
 You can create your own and set it using  
 
-```java
-manager.setRequestHandler(RequestHandler);
+```objective-c
+[manager.requestHandlerDelegate = self;
 ```
 
 Developed By
