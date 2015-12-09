@@ -1,7 +1,7 @@
 ts-http
 ====================
 
-Async http library
+Async http library for ios
 
 
 Usage
@@ -11,55 +11,44 @@ Usage
 Including In Your Project
 -------------------------
 
-Add maven url in repositories:
-```groovy
-maven { url 'http://maven.android-forever.com/' }
-```
-Add the library to your dependencies:
-```groovy
-compile 'com.tehnicomsolutions:ts-http:1.1.3.1'
-```
+TODO adding library as project dependencie
 
 Example
 -------------------------
 
 You use `TSRequestManager` for all requests  
 
-#### First instantiate TSHttp. 
-You should probably put this in your `Application` class or your main `Activity` class  
-You only need to do it once. This CANNOT be null. This method will call `getApplicationContext` on passed context.
-
-``` java
-TSHttp.init(Context);
-```
-
 #### Create new TSRequestManager
 
-``` java
-TSRequestManager manager = new TSRequestManager(this, false);
-```  
-The second parameter indicates whether `TSRequestManager` will execute tasks on caller thread (thread that called `manager.execute`) or on worker thread
-
-#### Add a response handler callback
-
-```java
-manager.addResponseHandler(new ResponseHandler()
-{
-    @Override
-    public void onResponse(int requestCode, int responseStatus, ResponseParser responseParser)
-    {
-        //you can handle response here, for example show it
-        tvResponse.setText(responseParser.getServerResponse().responseData);
-        //you could also create your own implementation of ResponseParser that will parse the response and return the result
-    }
-});
+``` objective-c
+TSRequestManager manager = [[TSRequestManager alloc] init];
 ```
+or
+``` objective-c
+TSRequestManager manager = [[TSRequestManager alloc] init: true];
+```
+The second parameter indicates whether `TSRequestManager` will execute tasks on caller thread (thread that called `[manager executeRequestWithRequestCode]`) or on worker thread
+
+#### Set a response handler dlegate
+
+```objective-c
+manager.responseHandlerDelegate = self;
+```
+#### Implement delegate method
+
+```objective-c
+- (void) onResponseWithRequestCode: (int) requestCode andResponseStatus: (int) responseStatus andResponseParser: (ResponseParser*) responseParser
+{
+    //you can handle response here, for example show it
+    //you could also create your own implementation of ResponseParser that will parse the response and return the result
+}
+```  
 
 #### Create a request
 
 To create a request you will use `RequestBuilder`
 
-```java
+```objective-c
 RequestBuilder builder = new RequestBuilder(RequestBuilder.Method.POST);//create new RequestBuilder with HTTP POST method
 builder.setPostMethod(RequestBuilder.PostMethod.X_WWW_FORM_URL_ENCODED);//set post method, X_WWW_FORM_URL_ENCODED is default so you don't need to set it
 builder.setRequestUrl("http://tulfie.conveo.net/api/v1/");//set a request url. You can also call static method `setDefaultRequestUrl` once, instead of setting is every time
