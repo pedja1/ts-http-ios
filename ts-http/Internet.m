@@ -9,6 +9,7 @@
 #import "Internet.h"
 #import "ts_http.h"
 #import "utility.h"
+#import "file.h"
 
 @implementation Internet
 
@@ -74,7 +75,35 @@
                     break;
                 }
                 case FORM_DATA:
+                {
+                    NSString *boundary = @"---------------------------14737809831466499882746641449";
+                    NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary];
+                    [request addValue:contentType forHTTPHeaderField:@"Content-Type"];
+                    
+                    NSMutableData *body = [NSMutableData data];
+                    for (NSString *key in [requastBuilder.postParams allKeys])
+                    {
+                        [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+                        [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n%@", key, [requastBuilder.postParams objectForKey:key]] dataUsingEncoding:NSUTF8StringEncoding]];
+                        [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+                    }
+                    
+                    for (File *file in requastBuilder.files)
+                    {
+                        NSError *fileLoadingError;
+                        NSData* data = [NSData dataWithContentsOfURL:file.url options:NSDataReadingUncached error:&fileLoadingError];
+                        if(!fileLoadingError)
+                        {
+                            [body appendData:[[NSString stringWithFormat: @"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", requastBuilder.fileParamName, file.fileName] dataUsingEncoding:NSUTF8StringEncoding]];
+                            [body appendData:[@"Content-Type: application/octet-stream\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+                            [body appendData:[NSData dataWithData:data]];
+                        }
+                    }
+                    
+                    [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+                    [request setHTTPBody:body];
                     break;
+                }
             }
             break;
         case GET:

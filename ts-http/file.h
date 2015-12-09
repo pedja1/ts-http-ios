@@ -8,7 +8,7 @@
 
 @interface File : NSObject
 
-@property NSString *uri;
+@property NSURL *url;
 @property NSString *fileName;
 @property NSString *mimeType;
 
