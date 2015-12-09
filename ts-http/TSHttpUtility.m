@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Predrag Cokulov. All rights reserved.
 //
 
-#import "utility.h"
+#import "TSHttpUtility.h"
 
 @implementation TSHttpUtility
 

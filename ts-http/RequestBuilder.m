@@ -6,9 +6,9 @@
 //  Copyright © 2015 Predrag Cokulov. All rights reserved.
 //
 
-#import "request_builder.h"
-#import "ts_http.h"
-#import "utility.h"
+#import "RequestBuilder.h"
+#import "TSHttp.h"
+#import "TSHttpUtility.h"
 
 @implementation RequestBuilder
 

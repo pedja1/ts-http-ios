@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Framework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>ts-http.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>074AB8531C18B658000C9A19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>07D88B4B1C08E5FE00327D1A</key>
 		<dict>
 			<key>primary</key>

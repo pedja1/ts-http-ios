@@ -6,12 +6,12 @@
 //  Copyright © 2015 Predrag Cokulov. All rights reserved.
 //
 
-#import "ts_request_manager.h"
+#import "TSRequestManager.h"
 #import "NoInternetConnectionHandler.h"
 #import "SimpleRequestHandler.h"
-#import "utility.h"
-#import "network.h"
-#import "request.h"
+#import "TSHttpUtility.h"
+#import "Network.h"
+#import "Request.h"
 
 @interface TSRequestManager()
 

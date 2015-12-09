@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "response_message_policy.h"
+#import "ResponseMessagePolicy.h"
 
 @implementation ResponseMessagePolicy
 

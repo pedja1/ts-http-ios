@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ts_request_manager.h"
+#import "TSRequestManager.h"
 #import <UIKit/UIKit.h>
 
 @interface NoInternetConnectionHandler : NSObject <NoInternetConnectionHandlerDelegate, UIAlertViewDelegate>

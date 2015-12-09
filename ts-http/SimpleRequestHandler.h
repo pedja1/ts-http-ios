@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ts_request_manager.h"
+#import "TSRequestManager.h"
 
 @interface SimpleRequestHandler : NSObject <RequestHandlerDelegate>
 

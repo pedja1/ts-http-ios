@@ -6,22 +6,37 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		074AB8531C18B658000C9A19 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 074AB8541C18B658000C9A19 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				074AB8591C18B686000C9A19 /* MultiPlatform Build */,
+			);
+			dependencies = (
+				074AB8581C18B66F000C9A19 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		0707B7D81C0F6B90002469EE /* file.m in Sources */ = {isa = PBXBuildFile; fileRef = 0707B7D71C0F6B90002469EE /* file.m */; };
-		0707B7DB1C0F71E8002469EE /* ts_request_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0707B7D91C0F71E8002469EE /* ts_request_manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0707B7DC1C0F71E8002469EE /* ts_request_manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0707B7DA1C0F71E8002469EE /* ts_request_manager.m */; };
-		071204841C0E101500A478AE /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 071204831C0E101500A478AE /* file.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		071204861C0E114E00A478AE /* response_message_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = 071204851C0E114E00A478AE /* response_message_policy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		071204881C0E12CC00A478AE /* request_builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 071204871C0E12CC00A478AE /* request_builder.m */; };
-		0712048A1C0E25CF00A478AE /* response_message_policy.m in Sources */ = {isa = PBXBuildFile; fileRef = 071204891C0E25CF00A478AE /* response_message_policy.m */; };
-		072502A21C09D3BF00CB192D /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7B21C09C8A10051790B /* utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		072502A31C09D3C600CB192D /* network.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7AA1C09BE9D0051790B /* network.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		072502A41C09D3C800CB192D /* request_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7B51C09CE330051790B /* request_builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		072502A51C09D3CC00CB192D /* ts_http.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D88B4F1C08E5FE00327D1A /* ts_http.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0707B7D81C0F6B90002469EE /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 0707B7D71C0F6B90002469EE /* File.m */; };
+		0707B7DB1C0F71E8002469EE /* TSRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0707B7D91C0F71E8002469EE /* TSRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0707B7DC1C0F71E8002469EE /* TSRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0707B7DA1C0F71E8002469EE /* TSRequestManager.m */; };
+		071204841C0E101500A478AE /* File.h in Headers */ = {isa = PBXBuildFile; fileRef = 071204831C0E101500A478AE /* File.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071204861C0E114E00A478AE /* ResponseMessagePolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 071204851C0E114E00A478AE /* ResponseMessagePolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071204881C0E12CC00A478AE /* RequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 071204871C0E12CC00A478AE /* RequestBuilder.m */; };
+		0712048A1C0E25CF00A478AE /* ResponseMessagePolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 071204891C0E25CF00A478AE /* ResponseMessagePolicy.m */; };
+		072502A21C09D3BF00CB192D /* TSHttpUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7B21C09C8A10051790B /* TSHttpUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		072502A31C09D3C600CB192D /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7AA1C09BE9D0051790B /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		072502A41C09D3C800CB192D /* RequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7B51C09CE330051790B /* RequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		072502A51C09D3CC00CB192D /* TSHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D88B4F1C08E5FE00327D1A /* TSHttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		072502A61C09D3EB00CB192D /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 074FD7AD1C09C7C00051790B /* Reachability.h */; };
 		07281F091C0CD63900A19FD2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07281F081C0CD63900A19FD2 /* QuartzCore.framework */; };
-		0745E9571C12ED270056D064 /* request.h in Headers */ = {isa = PBXBuildFile; fileRef = 0745E9551C12ED270056D064 /* request.h */; };
-		0745E9581C12ED270056D064 /* request.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745E9561C12ED270056D064 /* request.m */; };
+		0745E9571C12ED270056D064 /* Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 0745E9551C12ED270056D064 /* Request.h */; };
+		0745E9581C12ED270056D064 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745E9561C12ED270056D064 /* Request.m */; };
 		0745E95B1C12F5CD0056D064 /* NoInternetConnectionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0745E9591C12F5CD0056D064 /* NoInternetConnectionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0745E95C1C12F5CD0056D064 /* NoInternetConnectionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745E95A1C12F5CD0056D064 /* NoInternetConnectionHandler.m */; };
 		0745E95F1C12F8B30056D064 /* SimpleRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0745E95D1C12F8B30056D064 /* SimpleRequestHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,21 +45,28 @@
 		0745E9641C12FBD60056D064 /* Internet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745E9621C12FBD60056D064 /* Internet.m */; };
 		0745E9671C12FC0B0056D064 /* Response.h in Headers */ = {isa = PBXBuildFile; fileRef = 0745E9651C12FC0B0056D064 /* Response.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0745E9681C12FC0B0056D064 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745E9661C12FC0B0056D064 /* Response.m */; };
-		074FD7AC1C09BF330051790B /* network.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7AB1C09BF330051790B /* network.m */; };
+		074FD7AC1C09BF330051790B /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7AB1C09BF330051790B /* Network.m */; };
 		074FD7AF1C09C7C00051790B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7AE1C09C7C00051790B /* Reachability.m */; };
-		074FD7B41C09C9240051790B /* utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7B31C09C9240051790B /* utility.m */; };
-		075DB4FC1C10BDB10012753D /* response_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 075DB4FA1C10BDB10012753D /* response_parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		075DB4FD1C10BDB10012753D /* response_parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DB4FB1C10BDB10012753D /* response_parser.m */; };
+		074FD7B41C09C9240051790B /* TSHttpUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FD7B31C09C9240051790B /* TSHttpUtility.m */; };
+		075DB4FC1C10BDB10012753D /* ResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 075DB4FA1C10BDB10012753D /* ResponseParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		075DB4FD1C10BDB10012753D /* ResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DB4FB1C10BDB10012753D /* ResponseParser.m */; };
 		077004391C1360440077132E /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 077004371C1360440077132E /* MBProgressHUD.h */; };
 		0770043A1C1360440077132E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 077004381C1360440077132E /* MBProgressHUD.m */; };
 		07781C0E1C0C2DD800E7FEFB /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 07781C0C1C0C2DD800E7FEFB /* Toast.h */; };
 		07781C0F1C0C2DD800E7FEFB /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 07781C0D1C0C2DD800E7FEFB /* Toast.m */; };
-		07D88B501C08E5FE00327D1A /* ts_http.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07D88B4F1C08E5FE00327D1A /* ts_http.h */; };
-		07D88B521C08E5FE00327D1A /* ts_http.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D88B511C08E5FE00327D1A /* ts_http.m */; };
+		07D88B501C08E5FE00327D1A /* TSHttp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07D88B4F1C08E5FE00327D1A /* TSHttp.h */; };
+		07D88B521C08E5FE00327D1A /* TSHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D88B511C08E5FE00327D1A /* TSHttp.m */; };
 		07D88B581C08E5FE00327D1A /* libts-http.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D88B4C1C08E5FE00327D1A /* libts-http.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		074AB8571C18B66F000C9A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07D88B441C08E5FE00327D1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07D88B4B1C08E5FE00327D1A;
+			remoteInfo = "ts-http";
+		};
 		07D88B591C08E5FE00327D1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 07D88B441C08E5FE00327D1A /* Project object */;
@@ -61,23 +83,23 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				07D88B501C08E5FE00327D1A /* ts_http.h in CopyFiles */,
+				07D88B501C08E5FE00327D1A /* TSHttp.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0707B7D71C0F6B90002469EE /* file.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = file.m; sourceTree = "<group>"; };
-		0707B7D91C0F71E8002469EE /* ts_request_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts_request_manager.h; sourceTree = "<group>"; };
-		0707B7DA1C0F71E8002469EE /* ts_request_manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ts_request_manager.m; sourceTree = "<group>"; };
-		071204831C0E101500A478AE /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
-		071204851C0E114E00A478AE /* response_message_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = response_message_policy.h; sourceTree = "<group>"; };
-		071204871C0E12CC00A478AE /* request_builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = request_builder.m; sourceTree = "<group>"; };
-		071204891C0E25CF00A478AE /* response_message_policy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = response_message_policy.m; sourceTree = "<group>"; };
+		0707B7D71C0F6B90002469EE /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
+		0707B7D91C0F71E8002469EE /* TSRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRequestManager.h; sourceTree = "<group>"; };
+		0707B7DA1C0F71E8002469EE /* TSRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRequestManager.m; sourceTree = "<group>"; };
+		071204831C0E101500A478AE /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
+		071204851C0E114E00A478AE /* ResponseMessagePolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseMessagePolicy.h; sourceTree = "<group>"; };
+		071204871C0E12CC00A478AE /* RequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestBuilder.m; sourceTree = "<group>"; };
+		071204891C0E25CF00A478AE /* ResponseMessagePolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseMessagePolicy.m; sourceTree = "<group>"; };
 		07281F081C0CD63900A19FD2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		0745E9551C12ED270056D064 /* request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = request.h; sourceTree = "<group>"; };
-		0745E9561C12ED270056D064 /* request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = request.m; sourceTree = "<group>"; };
+		0745E9551C12ED270056D064 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		0745E9561C12ED270056D064 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 		0745E9591C12F5CD0056D064 /* NoInternetConnectionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoInternetConnectionHandler.h; sourceTree = "<group>"; };
 		0745E95A1C12F5CD0056D064 /* NoInternetConnectionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoInternetConnectionHandler.m; sourceTree = "<group>"; };
 		0745E95D1C12F8B30056D064 /* SimpleRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleRequestHandler.h; sourceTree = "<group>"; };
@@ -86,22 +108,22 @@
 		0745E9621C12FBD60056D064 /* Internet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Internet.m; sourceTree = "<group>"; };
 		0745E9651C12FC0B0056D064 /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
 		0745E9661C12FC0B0056D064 /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
-		074FD7AA1C09BE9D0051790B /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
-		074FD7AB1C09BF330051790B /* network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = network.m; sourceTree = "<group>"; };
+		074FD7AA1C09BE9D0051790B /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		074FD7AB1C09BF330051790B /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		074FD7AD1C09C7C00051790B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		074FD7AE1C09C7C00051790B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		074FD7B21C09C8A10051790B /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
-		074FD7B31C09C9240051790B /* utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utility.m; sourceTree = "<group>"; };
-		074FD7B51C09CE330051790B /* request_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = request_builder.h; sourceTree = "<group>"; };
-		075DB4FA1C10BDB10012753D /* response_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = response_parser.h; sourceTree = "<group>"; };
-		075DB4FB1C10BDB10012753D /* response_parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = response_parser.m; sourceTree = "<group>"; };
+		074FD7B21C09C8A10051790B /* TSHttpUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSHttpUtility.h; sourceTree = "<group>"; };
+		074FD7B31C09C9240051790B /* TSHttpUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSHttpUtility.m; sourceTree = "<group>"; };
+		074FD7B51C09CE330051790B /* RequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestBuilder.h; sourceTree = "<group>"; };
+		075DB4FA1C10BDB10012753D /* ResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseParser.h; sourceTree = "<group>"; };
+		075DB4FB1C10BDB10012753D /* ResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseParser.m; sourceTree = "<group>"; };
 		077004371C1360440077132E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		077004381C1360440077132E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		07781C0C1C0C2DD800E7FEFB /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
 		07781C0D1C0C2DD800E7FEFB /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		07D88B4C1C08E5FE00327D1A /* libts-http.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libts-http.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		07D88B4F1C08E5FE00327D1A /* ts_http.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ts_http.h; sourceTree = "<group>"; };
-		07D88B511C08E5FE00327D1A /* ts_http.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ts_http.m; sourceTree = "<group>"; };
+		07D88B4F1C08E5FE00327D1A /* TSHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSHttp.h; sourceTree = "<group>"; };
+		07D88B511C08E5FE00327D1A /* TSHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSHttp.m; sourceTree = "<group>"; };
 		07D88B571C08E5FE00327D1A /* ts-httpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ts-httpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D88B5D1C08E5FE00327D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,8 +151,8 @@
 		074FD7B01C09C85F0051790B /* utility */ = {
 			isa = PBXGroup;
 			children = (
-				074FD7B21C09C8A10051790B /* utility.h */,
-				074FD7B31C09C9240051790B /* utility.m */,
+				074FD7B21C09C8A10051790B /* TSHttpUtility.h */,
+				074FD7B31C09C9240051790B /* TSHttpUtility.m */,
 			);
 			name = utility;
 			sourceTree = "<group>";
@@ -162,22 +184,22 @@
 				07781C0C1C0C2DD800E7FEFB /* Toast.h */,
 				074FD7AD1C09C7C00051790B /* Reachability.h */,
 				074FD7AE1C09C7C00051790B /* Reachability.m */,
-				07D88B4F1C08E5FE00327D1A /* ts_http.h */,
-				07D88B511C08E5FE00327D1A /* ts_http.m */,
-				074FD7AA1C09BE9D0051790B /* network.h */,
-				074FD7AB1C09BF330051790B /* network.m */,
-				074FD7B51C09CE330051790B /* request_builder.h */,
-				071204871C0E12CC00A478AE /* request_builder.m */,
-				071204831C0E101500A478AE /* file.h */,
-				0707B7D71C0F6B90002469EE /* file.m */,
-				071204851C0E114E00A478AE /* response_message_policy.h */,
-				071204891C0E25CF00A478AE /* response_message_policy.m */,
-				0707B7D91C0F71E8002469EE /* ts_request_manager.h */,
-				0707B7DA1C0F71E8002469EE /* ts_request_manager.m */,
-				075DB4FA1C10BDB10012753D /* response_parser.h */,
-				075DB4FB1C10BDB10012753D /* response_parser.m */,
-				0745E9551C12ED270056D064 /* request.h */,
-				0745E9561C12ED270056D064 /* request.m */,
+				07D88B4F1C08E5FE00327D1A /* TSHttp.h */,
+				07D88B511C08E5FE00327D1A /* TSHttp.m */,
+				074FD7AA1C09BE9D0051790B /* Network.h */,
+				074FD7AB1C09BF330051790B /* Network.m */,
+				074FD7B51C09CE330051790B /* RequestBuilder.h */,
+				071204871C0E12CC00A478AE /* RequestBuilder.m */,
+				071204831C0E101500A478AE /* File.h */,
+				0707B7D71C0F6B90002469EE /* File.m */,
+				071204851C0E114E00A478AE /* ResponseMessagePolicy.h */,
+				071204891C0E25CF00A478AE /* ResponseMessagePolicy.m */,
+				0707B7D91C0F71E8002469EE /* TSRequestManager.h */,
+				0707B7DA1C0F71E8002469EE /* TSRequestManager.m */,
+				075DB4FA1C10BDB10012753D /* ResponseParser.h */,
+				075DB4FB1C10BDB10012753D /* ResponseParser.m */,
+				0745E9551C12ED270056D064 /* Request.h */,
+				0745E9561C12ED270056D064 /* Request.m */,
 				0745E9591C12F5CD0056D064 /* NoInternetConnectionHandler.h */,
 				0745E95A1C12F5CD0056D064 /* NoInternetConnectionHandler.m */,
 				0745E95D1C12F8B30056D064 /* SimpleRequestHandler.h */,
@@ -215,22 +237,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				072502A21C09D3BF00CB192D /* utility.h in Headers */,
-				072502A31C09D3C600CB192D /* network.h in Headers */,
-				075DB4FC1C10BDB10012753D /* response_parser.h in Headers */,
-				072502A51C09D3CC00CB192D /* ts_http.h in Headers */,
+				072502A21C09D3BF00CB192D /* TSHttpUtility.h in Headers */,
+				072502A31C09D3C600CB192D /* Network.h in Headers */,
+				075DB4FC1C10BDB10012753D /* ResponseParser.h in Headers */,
+				072502A51C09D3CC00CB192D /* TSHttp.h in Headers */,
 				0745E95F1C12F8B30056D064 /* SimpleRequestHandler.h in Headers */,
-				071204861C0E114E00A478AE /* response_message_policy.h in Headers */,
-				0707B7DB1C0F71E8002469EE /* ts_request_manager.h in Headers */,
+				071204861C0E114E00A478AE /* ResponseMessagePolicy.h in Headers */,
+				0707B7DB1C0F71E8002469EE /* TSRequestManager.h in Headers */,
 				0745E95B1C12F5CD0056D064 /* NoInternetConnectionHandler.h in Headers */,
 				0745E9631C12FBD60056D064 /* Internet.h in Headers */,
-				071204841C0E101500A478AE /* file.h in Headers */,
+				071204841C0E101500A478AE /* File.h in Headers */,
 				0745E9671C12FC0B0056D064 /* Response.h in Headers */,
-				072502A41C09D3C800CB192D /* request_builder.h in Headers */,
+				072502A41C09D3C800CB192D /* RequestBuilder.h in Headers */,
 				077004391C1360440077132E /* MBProgressHUD.h in Headers */,
 				072502A61C09D3EB00CB192D /* Reachability.h in Headers */,
 				07781C0E1C0C2DD800E7FEFB /* Toast.h in Headers */,
-				0745E9571C12ED270056D064 /* request.h in Headers */,
+				0745E9571C12ED270056D064 /* Request.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +267,7 @@
 				07D88B491C08E5FE00327D1A /* Frameworks */,
 				07D88B4A1C08E5FE00327D1A /* CopyFiles */,
 				072502A11C09D37700CB192D /* Headers */,
+				074AB8521C18B4A6000C9A19 /* Build Framework */,
 			);
 			buildRules = (
 			);
@@ -282,6 +305,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Predrag Cokulov";
 				TargetAttributes = {
+					074AB8531C18B658000C9A19 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 					07D88B4B1C08E5FE00327D1A = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -304,6 +330,7 @@
 			targets = (
 				07D88B4B1C08E5FE00327D1A /* ts-http */,
 				07D88B561C08E5FE00327D1A /* ts-httpTests */,
+				074AB8531C18B658000C9A19 /* Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -318,27 +345,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		074AB8521C18B4A6000C9A19 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+		074AB8591C18B686000C9A19 /* MultiPlatform Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "MultiPlatform Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07D88B481C08E5FE00327D1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0745E9581C12ED270056D064 /* request.m in Sources */,
+				0745E9581C12ED270056D064 /* Request.m in Sources */,
 				0770043A1C1360440077132E /* MBProgressHUD.m in Sources */,
-				074FD7B41C09C9240051790B /* utility.m in Sources */,
-				0707B7D81C0F6B90002469EE /* file.m in Sources */,
-				074FD7AC1C09BF330051790B /* network.m in Sources */,
+				074FD7B41C09C9240051790B /* TSHttpUtility.m in Sources */,
+				0707B7D81C0F6B90002469EE /* File.m in Sources */,
+				074FD7AC1C09BF330051790B /* Network.m in Sources */,
 				0745E9641C12FBD60056D064 /* Internet.m in Sources */,
 				0745E95C1C12F5CD0056D064 /* NoInternetConnectionHandler.m in Sources */,
 				0745E9601C12F8B30056D064 /* SimpleRequestHandler.m in Sources */,
 				074FD7AF1C09C7C00051790B /* Reachability.m in Sources */,
-				071204881C0E12CC00A478AE /* request_builder.m in Sources */,
-				075DB4FD1C10BDB10012753D /* response_parser.m in Sources */,
-				0712048A1C0E25CF00A478AE /* response_message_policy.m in Sources */,
+				071204881C0E12CC00A478AE /* RequestBuilder.m in Sources */,
+				075DB4FD1C10BDB10012753D /* ResponseParser.m in Sources */,
+				0712048A1C0E25CF00A478AE /* ResponseMessagePolicy.m in Sources */,
 				07781C0F1C0C2DD800E7FEFB /* Toast.m in Sources */,
 				0745E9681C12FC0B0056D064 /* Response.m in Sources */,
-				07D88B521C08E5FE00327D1A /* ts_http.m in Sources */,
-				0707B7DC1C0F71E8002469EE /* ts_request_manager.m in Sources */,
+				07D88B521C08E5FE00327D1A /* TSHttp.m in Sources */,
+				0707B7DC1C0F71E8002469EE /* TSRequestManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +410,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		074AB8581C18B66F000C9A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07D88B4B1C08E5FE00327D1A /* ts-http */;
+			targetProxy = 074AB8571C18B66F000C9A19 /* PBXContainerItemProxy */;
+		};
 		07D88B5A1C08E5FE00327D1A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 07D88B4B1C08E5FE00327D1A /* ts-http */;
@@ -360,6 +423,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		074AB8551C18B658000C9A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		074AB8561C18B658000C9A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		07D88B5E1C08E5FE00327D1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -500,6 +577,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		074AB8541C18B658000C9A19 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074AB8551C18B658000C9A19 /* Debug */,
+				074AB8561C18B658000C9A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		07D88B471C08E5FE00327D1A /* Build configuration list for PBXProject "ts-http" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

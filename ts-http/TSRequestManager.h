@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "response_parser.h"
-#import "request_builder.h"
+#import "ResponseParser.h"
+#import "RequestBuilder.h"
 
 @class TSRequestManager;
 

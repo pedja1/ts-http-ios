@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Predrag Cokulov. All rights reserved.
 //
 
-#import "ts_http.h"
+#import "TSHttp.h"
 
 @implementation TSHttp
 

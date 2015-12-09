@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Response.h"
-#import "request_builder.h"
+#import "RequestBuilder.h"
 
 @interface Internet : NSObject
 

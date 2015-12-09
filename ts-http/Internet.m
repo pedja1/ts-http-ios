@@ -7,8 +7,8 @@
 //
 
 #import "Internet.h"
-#import "ts_http.h"
-#import "utility.h"
+#import "TSHttp.h"
+#import "TSHttpUtility.h"
 #import "file.h"
 
 @implementation Internet

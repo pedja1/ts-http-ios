@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "file.h"
-#import "response_message_policy.h"
+#import "ResponseMessagePolicy.h"
 
 @interface RequestBuilder : NSObject
 

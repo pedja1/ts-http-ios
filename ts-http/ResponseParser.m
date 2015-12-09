@@ -6,7 +6,7 @@
 //  Copyright © 2015 Predrag Cokulov. All rights reserved.
 //
 
-#import "response_parser.h"
+#import "ResponseParser.h"
 
 @implementation ResponseParser
 

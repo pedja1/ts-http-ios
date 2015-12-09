@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "request_builder.h"
+#import "RequestBuilder.h"
 
 @interface Request : NSObject
 
