@@ -27,7 +27,7 @@
         _response = [[Response alloc] init];
         _response.code = 200;
         _response.request = nil;
-        _response.responseData = response;
+        _response.responseDataString = response;
         _response.responseMessage = nil;
     }
     return self;

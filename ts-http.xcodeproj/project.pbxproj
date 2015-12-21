@@ -54,7 +54,6 @@
 		0770043A1C1360440077132E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 077004381C1360440077132E /* MBProgressHUD.m */; };
 		07781C0E1C0C2DD800E7FEFB /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 07781C0C1C0C2DD800E7FEFB /* Toast.h */; };
 		07781C0F1C0C2DD800E7FEFB /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 07781C0D1C0C2DD800E7FEFB /* Toast.m */; };
-		07D88B501C08E5FE00327D1A /* TSHttp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07D88B4F1C08E5FE00327D1A /* TSHttp.h */; };
 		07D88B521C08E5FE00327D1A /* TSHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D88B511C08E5FE00327D1A /* TSHttp.m */; };
 		07D88B581C08E5FE00327D1A /* libts-http.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D88B4C1C08E5FE00327D1A /* libts-http.a */; };
 /* End PBXBuildFile section */
@@ -83,7 +82,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				07D88B501C08E5FE00327D1A /* TSHttp.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +582,7 @@
 				074AB8561C18B658000C9A19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07D88B471C08E5FE00327D1A /* Build configuration list for PBXProject "ts-http" */ = {
 			isa = XCConfigurationList;
