@@ -124,6 +124,7 @@
 		07D88B511C08E5FE00327D1A /* TSHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSHttp.m; sourceTree = "<group>"; };
 		07D88B571C08E5FE00327D1A /* ts-httpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ts-httpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D88B5D1C08E5FE00327D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659B6F2F0B478EFD28147EA9 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +163,7 @@
 				07D88B4E1C08E5FE00327D1A /* ts-http */,
 				07D88B5B1C08E5FE00327D1A /* ts-httpTests */,
 				07D88B4D1C08E5FE00327D1A /* Products */,
+				659B6F2F0B478EFD28147EA9 /* LICENCE.txt */,
 			);
 			sourceTree = "<group>";
 		};

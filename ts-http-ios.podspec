@@ -39,8 +39,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "Apache Licence, Version 2.0"
-  # s.license      = { :type => "MIT", :file => "LICENCE.txt" }
+  #s.license      = "Apache Licence, Version 2.0"
+  s.license      = { :type => "Apache Licence, Version 2.0", :file => "LICENCE.txt" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
   s.author             = { "pedja1" => "predragcokulov@gmail.com" }
   # Or just: s.author    = "pedja1"
   # s.authors            = { "pedja1" => "predragcokulov@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/pedja1"
+  # s.social_media_url   = "http://twitter.com/predragcokulov"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github.com/pedja1/ts_http.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/pedja1/ts-http-ios.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "ts-http", "ts-http/**/*.{h,m}"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
