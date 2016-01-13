@@ -51,10 +51,10 @@ To create a request you will use `RequestBuilder`
 ```objective-c
 RequestBuilder builder = [[RequestBuilder alloc] initWithMethod: POST];//create new RequestBuilder with HTTP POST method
 builder.postMethod = X_WWW_FORM_URL_ENCODED;//set post method, X_WWW_FORM_URL_ENCODED is default so you don't need to set it
-builder.requestUrl = @"http://tulfie.conveo.net/api/v1/";//set a request url. You can also call static method `setDefaultRequestUrl` once, instead of setting is every time
-[builder addUrlPart: @"members"];//this will add param as part of the url. eg. http://tulfie.conveo.net/api/v1/member/login
+builder.requestUrl = @"http://www.example-api-server.com/api/v1/";//set a request url. You can also call static method `setDefaultRequestUrl` once, instead of setting is every time
+[builder addUrlPart: @"members"];//this will add param as part of the url. eg. http://www.example-api-server.com/api/v1/member/login
 [builder addUrlPart: @"login"];
-[builder addParamWithKey: @"username" andValue: @"predragcokulov@gmail.com"];//add POST param, if HTTP method was GET, then this would put param in url. eg. http://tulfie.conveo.net/api/v1/member/login?username=predragcokulov@gmail.com
+[builder addParamWithKey: @"username" andValue: @"predragcokulov@gmail.com"];//add POST param, if HTTP method was GET, then this would put param in url. eg. http://www.example-api-server.com/api/v1/member/login?username=predragcokulov@gmail.com
 [builder addParamWithKey: @"password" andValue: @"123456";
 ```
 
