@@ -1,7 +1,7 @@
 ts-http
 ====================
 
-Async http library for ios
+Wrapper library for async http calls for ios
 
 
 Usage
